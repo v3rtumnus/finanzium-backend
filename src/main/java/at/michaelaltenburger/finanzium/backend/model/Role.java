@@ -6,7 +6,7 @@ import org.hibernate.annotations.NaturalId;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tb_role")
+@Table(name = "TB_ROLE")
 @Data
 public class Role {
     @Id
@@ -15,6 +15,6 @@ public class Role {
 
     @Enumerated(EnumType.STRING)
     @NaturalId
-    @Column(length = 60)
+    @Column(length = 60, name = "ROLE_NAME")
     private RoleName name;
 }
